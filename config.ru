@@ -4,7 +4,7 @@ require "sinatra"
 require 'platform-api'
 
 class Casco < Sinatra::Base
-  get '/restart' do
+  post '/restart' do
     if params["key"] == ENV['RESTART_WEBHOOK_KEY'] && ENV['RESTART_API_KEY']
       @@connection ||= PlatformAPI.connect_oauth(ENV['RESTART_API_KEY'])
 
