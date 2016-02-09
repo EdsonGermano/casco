@@ -13,7 +13,7 @@ class Casco < Sinatra::Base
       @@connection.dyno.list(ENV['VICTIM_APP_NAME']).select { |dyno|
         dyno['type'] == 'web'
       }.each { |dyno|
-        # puts dyno.inspect
+        puts "Restarting #{ENV['VICTIM_APP_NAME']} dyno #{dyno['name']}"
         @@connection.dyno.restart(ENV['VICTIM_APP_NAME'], dyno['name'])
         restarted += 1
       }

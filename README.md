@@ -1,3 +1,5 @@
+![USS Casco](https://upload.wikimedia.org/wikipedia/commons/f/f5/USS_Casco.jpg)
+
 The [USS Casco](https://en.wikipedia.org/wiki/USS_Casco_(1864)) was a Union river [monitor](https://en.wikipedia.org/wiki/Monitor_(warship)). This monitor restarts a Heroku instance when triggered with a utility like [PaperTrail](https://papertrailapp.com/).
 
 To set it up, set the following Heroku environment variables:
